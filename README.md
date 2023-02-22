@@ -1,5 +1,6 @@
 <div align="center">
 <img width="110px" src="https://raw.githubusercontent.com/promptslab/Promptify/main/logo/logo.png">
+<img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png">
 <h1>PromptifyJs</h1></div>
 <!-- 
 <h2 align="center">PromptifyJs</h2> -->
