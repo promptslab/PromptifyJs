@@ -1,6 +1,6 @@
 <div align="center">
 <img width="110px" src="https://raw.githubusercontent.com/promptslab/Promptify/main/logo/logo.png">
-<h1>PromptifyJS</h1></div>
+<h1>PromptifyJs</h1></div>
 <!-- 
 <h2 align="center">PromptifyJs</h2> -->
 
