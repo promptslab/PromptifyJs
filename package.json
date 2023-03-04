@@ -1,34 +1,35 @@
 {
-  "name": "promptifyjs",
-  "version": "0.0.1",
-  "description": "Prompt Engineering, Solve NLP Problems with LLM's & Easily generate different NLP Task prompts for popular generative models like GPT, PaLM, and more with Promptify",
-  "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/promptslab/PromptifyJs.git"
-  },
-  "keywords": [
-    "promptslab"
-  ],
-  "author": "promptslab",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/promptslab/PromptifyJs/issues"
-  },
-  "homepage": "https://github.com/promptslab/PromptifyJs#readme",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "helmet": "^6.0.1",
-    "mongoose": "^7.0.0",
-    "openai": "^3.1.0"
-  }
+    "name": "promptifyjs",
+    "version": "0.0.1",
+    "description": "Prompt Engineering, Solve NLP Problems with LLM's & Easily generate different NLP Task prompts for popular generative models like GPT, PaLM, and more with Promptify",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+        "example": "examples"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/promptslab/PromptifyJs.git"
+    },
+    "keywords": [
+        "promptslab"
+    ],
+    "author": "promptslab",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/promptslab/PromptifyJs/issues"
+    },
+    "homepage": "https://github.com/promptslab/PromptifyJs#readme",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "helmet": "^6.0.1",
+        "mongoose": "^7.0.0",
+        "openai": "^3.1.0"
+    }
 }

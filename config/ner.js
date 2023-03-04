@@ -1,10 +1,22 @@
-export const ner = ({text_input = '', description = '', domain = '', labels = '', examples = []}) => {
+export const ner = ({
+    text_input = "",
+    description = "",
+    domain = "",
+    labels = "",
+    examples = [],
+}) => {
+    if (!text_input) throw new Error("input is required");
 
-    if(!text_input) throw new Error('input is required');
-
-    const _domain = `${domain ? `${domain} domain` : ''}`;
-    const _label = `${labels ? `following predefined entity types: ${labels}` : 'entity types'}`;
-    const _example = examples && examples.length > 0 ? `Examples: ${ examples.map(ex => `Input ${ex.sentence} Output [${ex.sentence}]`)  }` : ''
+    const _domain = `${domain ? `${domain} domain` : ""}`;
+    const _label = `${
+        labels ? `following predefined entity types: ${labels}` : "entity types"
+    }`;
+    const _example =
+        examples && examples.length > 0
+            ? `Examples: ${examples.map(
+                  (ex) => `Input ${ex.sentence} Output [${ex.sentence}]`
+              )}`
+            : "";
     return `
         ${description} 
         You are a highly intelligent and accurate ${_domain} Named-entity recognition(NER) system. You take Passage as input and your task is to recognize and extract specific types of ${_domain} named entities in that given passage and classify into a set of ${_label}.
@@ -12,5 +24,5 @@ export const ner = ({text_input = '', description = '', domain = '', labels = ''
         ${_example}
         Input: ${text_input}
         Output:
-    `
-}
+    `;
+};
