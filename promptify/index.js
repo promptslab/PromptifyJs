@@ -22,7 +22,7 @@ export const Prompter = async (
     const completion = await model.createCompletion({
         model: modelType,
         prompt: prompt,
-        max_tokens: 100,
+        max_tokens: 2000,
     });
 
     return completion.data;
