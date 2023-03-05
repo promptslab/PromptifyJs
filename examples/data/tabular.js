@@ -1,8 +1,8 @@
 export const tabularData = {
     samples: [
         {
-            Text: "John Doe, a 32-year-old engineer, can be reached at johndoe@email.com.",
-            "Tabular Data": {
+            text: "John Doe, a 32-year-old engineer, can be reached at johndoe@email.com.",
+            tabulardata: {
                 name: "John Doe",
                 age: 32,
                 occupation: "Engineer",
@@ -10,8 +10,8 @@ export const tabularData = {
             },
         },
         {
-            Text: "The latest iPhone, the XS Max, is priced at $999 and comes in a 128GB version with a gold finish.",
-            "Tabular Data": {
+            text: "The latest iPhone, the XS Max, is priced at $999 and comes in a 128GB version with a gold finish.",
+            tabulardata: {
                 product: "iPhone",
                 model: "XS Max",
                 price: 999,
@@ -20,8 +20,8 @@ export const tabularData = {
             },
         },
         {
-            Text: "Sarah Johnson, a 28-year-old teacher, can be contacted at sarahj@email.com.",
-            "Tabular Data": {
+            text: "Sarah Johnson, a 28-year-old teacher, can be contacted at sarahj@email.com.",
+            tabulardata: {
                 name: "Sarah Johnson",
                 age: 28,
                 occupation: "Teacher",
@@ -29,8 +29,8 @@ export const tabularData = {
             },
         },
         {
-            Text: "The new MacBook Pro, featuring the M1 chip, costs $1999 and comes with 16GB of memory in a silver finish.",
-            "Tabular Data": {
+            text: "The new MacBook Pro, featuring the M1 chip, costs $1999 and comes with 16GB of memory in a silver finish.",
+            tabulardata: {
                 product: "MacBook Pro",
                 model: "M1",
                 price: 1999,
@@ -40,8 +40,8 @@ export const tabularData = {
         },
 
         {
-            Text: "Dr. Michael Smith can be reached at michaels@email.com.",
-            "Tabular Data": {
+            text: "Dr. Michael Smith can be reached at michaels@email.com.",
+            tabulardata: {
                 name: "Michael Smith",
                 occupation: "Doctor",
                 email: "michaels@email.com",
@@ -49,8 +49,8 @@ export const tabularData = {
         },
 
         {
-            Text: "The 11-inch iPad Pro, with 128GB of storage, is available in space gray and costs $799.",
-            "Tabular Data": {
+            text: "The 11-inch iPad Pro, with 128GB of storage, is available in space gray and costs $799.",
+            tabulardata: {
                 product: "iPad Pro",
                 model: "11-inch",
                 price: 799,
@@ -60,8 +60,8 @@ export const tabularData = {
         },
 
         {
-            Text: "Emily Davis, a 31-year-old lawyer, can be reached at emilyd@email.com.",
-            "Tabular Data": {
+            text: "Emily Davis, a 31-year-old lawyer, can be reached at emilyd@email.com.",
+            tabulardata: {
                 name: "Emily Davis",
                 age: 31,
                 occupation: "Lawyer",
@@ -69,8 +69,8 @@ export const tabularData = {
             },
         },
         {
-            Text: "The AirPods Max, available in silver, costs $599.",
-            "Tabular Data": {
+            text: "The AirPods Max, available in silver, costs $599.",
+            tabulardata: {
                 product: "AirPods Max",
                 price: 599,
                 color: "Silver",
@@ -78,8 +78,8 @@ export const tabularData = {
         },
 
         {
-            Text: "David Brown, a 40-year-old manager, can be contacted at davidb@email.com.",
-            "Tabular Data": {
+            text: "David Brown, a 40-year-old manager, can be contacted at davidb@email.com.",
+            tabulardata: {
                 name: "David Brown",
                 age: 40,
                 occupation: "Manager",
@@ -88,8 +88,8 @@ export const tabularData = {
         },
 
         {
-            Text: "The Apple Watch Series 6, with GPS, comes in a 40mm silver aluminum case and costs $399.",
-            "Tabular Data": {
+            text: "The Apple Watch Series 6, with GPS, comes in a 40mm silver aluminum case and costs $399.",
+            tabulardata: {
                 product: "Apple Watch Series 6",
                 type: "GPS",
                 price: 399,
