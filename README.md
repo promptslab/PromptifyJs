@@ -1,11 +1,11 @@
 <div align="center">
-<img width="110px" src="https://raw.githubusercontent.com/promptslab/Promptify/main/logo/logo.png">
+<img width="110px" src="https://raw.githubusercontent.com/promptslab/Promptify/main/assets/logo.png">
 <h1>PromptifyJs</h1></div>
 
 <div align="center"><img width="110px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png">
 </div>
 
-<!-- 
+<!--
 <h2 align="center">PromptifyJs</h2> -->
 
 <p align="center">
