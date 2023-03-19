@@ -30,3 +30,44 @@
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="colab" />
   </a>
 </h4>
+
+## Quick tour
+
+To immediately use a LLM model for your NLP task, we provide the `Prompter` API.
+
+```js
+import { ner } from "../config/ner.js";
+import { OpenAI } from "../models/openai.js";
+import { Prompter } from "../promptify/index.js";
+import { nerData } from "../examples/data/optimized_ner.js";
+
+const model = OpenAI("api-key");
+const examples = nerData.samples[0].data;
+const firstExample = examples.slice(0, 3);
+
+const prompt = ner({
+    text_input: "I have alzheimers diease, I need medicine for it",
+    description: "Medicine NER Expert",
+    domain: "medicine",
+    labels: "",
+    examples: [firstExample],
+});
+
+const result = await Prompter(model, prompt, "text-davinci-003");
+
+console.log(result);
+                          
+                          
+### Output
+
+[{'E': '93-year-old', 'T': 'Age'},
+ {'E': 'chronic right hip pain', 'T': 'Medical Condition'},
+ {'E': 'osteoporosis', 'T': 'Medical Condition'},
+ {'E': 'hypertension', 'T': 'Medical Condition'},
+ {'E': 'depression', 'T': 'Medical Condition'},
+ {'E': 'chronic atrial fibrillation', 'T': 'Medical Condition'},
+ {'E': 'severe nausea and vomiting', 'T': 'Symptom'},
+ {'E': 'urinary tract infection', 'T': 'Medical Condition'},
+ {'Branch': 'Internal Medicine', 'Group': 'Geriatrics'}]
+ 
+```
