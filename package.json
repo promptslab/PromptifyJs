@@ -2,12 +2,14 @@
     "name": "promptifyjs",
     "version": "0.0.1",
     "description": "Prompt Engineering, Solve NLP Problems with LLM's & Easily generate different NLP Task prompts for popular generative models like GPT, PaLM, and more with Promptify",
-    "main": "index.js",
+    "main": "dist/index.js",
     "type": "module",
     "directories": {
         "example": "examples"
     },
     "scripts": {
+        "dev": "tsc -w",
+        "build": "tsc --sourceMap false",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -32,5 +34,9 @@
         "helmet": "^6.0.1",
         "mongoose": "^7.0.0",
         "openai": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.3",
+        "typescript": "^5.0.2"
     }
 }

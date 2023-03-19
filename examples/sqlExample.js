@@ -1,6 +1,6 @@
-import { sql } from "../config/sql.js";
-import { OpenAI } from "../models/openai.js";
-import { Prompter } from "../promptify/index.js";
+import { sql } from "../dist/config/sql.js";
+import { OpenAI } from "../dist/models/openai.js";
+import { Prompter } from "../dist/promptify/index.js";
 import { sqlData } from "../examples/data/sql.js";
 
 const model = OpenAI("");

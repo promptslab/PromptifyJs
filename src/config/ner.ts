@@ -4,6 +4,12 @@ export const ner = ({
     domain = "",
     labels = "",
     examples = [],
+}: {
+    text_input?: string;
+    description?: string;
+    domain?: string;
+    labels?: string;
+    examples?: Array<{ sentence: string }>;
 }) => {
     if (!text_input) throw new Error("input is required");
 

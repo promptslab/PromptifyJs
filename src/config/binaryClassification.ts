@@ -3,6 +3,11 @@ export const binaryClassification = ({
     description = "",
     labels = "",
     examples = [],
+}: {
+    text_input?: string;
+    description?: string;
+    labels?: string;
+    examples?: Array<{ text: string; labels: string }>;
 }) => {
     if (!text_input) throw new Error("input is required");
 
