@@ -12,7 +12,7 @@ export const qa = ({
   const _example =
       examples && examples.length > 0
           ? `Examples: ${examples.map(
-                (ex) => `Input ${ex.sentence} Output [${ex.sentence}]`
+                (ex) => `Input: ${ex.context} Question: ${ex.question} Output: [${ex.extracted_answer}]`
             )}`
           : "";
   return `
