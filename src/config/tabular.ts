@@ -2,6 +2,10 @@ export const tabular = ({
     text_input = "",
     description = "",
     examples = [],
+}: {
+    text_input?: string | { text: string };
+    description?: string;
+    examples?: { text: string; tabulardata: string }[];
 }) => {
     if (!text_input) throw new Error("input is required");
     if (!description) throw new Error("description is required");
@@ -22,7 +26,7 @@ export const tabular = ({
         ${_example}
 
         Target Input Below:
-        ${text_input.text}
+        ${typeof text_input === "string" ? text_input : text_input.text}
         Output for the target input:
     `;
 };

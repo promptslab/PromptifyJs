@@ -1,4 +1,4 @@
-import { Prompter } from "../promptify/index.js";
+import { Prompter } from "../dist/promptify/index.js";
 
 const prompt = [
     { role: "system", content: "you are an helpful assistat" },

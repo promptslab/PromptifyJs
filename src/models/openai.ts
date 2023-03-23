@@ -1,7 +1,7 @@
 // const { Configuration, OpenAI } = require("openai");
 import { Configuration, OpenAIApi } from "openai";
 
-export const OpenAI = (key) => {
+export const OpenAI = (key: string) => {
     if (!key) throw new Error("Open AI key is required");
 
     // Logic to validate `apiKey`

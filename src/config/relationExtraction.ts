@@ -1,8 +1,13 @@
 export const relationExtraction = ({
     text_input = "",
     description = "",
-    domain="",
+    domain = "",
     examples = [],
+}: {
+    text_input?: string,
+    description?: string,
+    domain?: string,
+    examples?: { text: string, labels: string }[],
 }) => {
     const _example =
         examples && examples.length > 0
@@ -19,5 +24,5 @@ export const relationExtraction = ({
         ${_example}
         Input: ${text_input}
         Output:
-    `
-}
+    `;
+};

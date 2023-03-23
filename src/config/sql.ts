@@ -4,6 +4,12 @@ export const sql = ({
     example_schema = {},
     target_schema = {},
     examples = [],
+}: {
+    text_input?: string;
+    description?: string;
+    example_schema?: any;
+    target_schema?: any;
+    examples?: { sentence: string; query: string }[];
 }) => {
     if (!text_input) throw new Error("input is required");
     if (!example_schema) throw new Error("example_schema is required");

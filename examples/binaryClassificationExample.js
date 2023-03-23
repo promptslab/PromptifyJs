@@ -1,6 +1,6 @@
-import { binaryClassification } from "../config/binaryClassification.js";
-import { OpenAI } from "../models/openai.js";
-import { Prompter } from "../promptify/index.js";
+import { binaryClassification } from "../dist/config/binaryClassification.js";
+import { OpenAI } from "../dist/models/openai.js";
+import { Prompter } from "../dist/promptify/index.js";
 import { binaryData } from "../examples/data/binary.js";
 
 const model = OpenAI("api-key");

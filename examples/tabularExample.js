@@ -1,6 +1,6 @@
-import { tabular } from "../config/tabular.js";
-import { OpenAI } from "../models/openai.js";
-import { Prompter } from "../promptify/index.js";
+import { tabular } from "../dist/config/tabular.js";
+import { OpenAI } from "../dist/models/openai.js";
+import { Prompter } from "../dist/promptify/index.js";
 import { tabularData } from "../examples/data/tabular.js";
 
 const model = OpenAI("api-key");

@@ -1,6 +1,6 @@
-import { ner } from "../config/ner.js";
-import { OpenAI } from "../models/openai.js";
-import { Prompter } from "../promptify/index.js";
+import { ner } from "../dist/config/ner.js";
+import { OpenAI } from "../dist/models/openai.js";
+import { Prompter } from "../dist/promptify/index.js";
 import { nerData } from "../examples/data/optimized_ner.js";
 
 const model = OpenAI("api-key");
