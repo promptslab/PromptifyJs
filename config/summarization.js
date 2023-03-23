@@ -4,7 +4,7 @@ export const summarization = ({ description = '', examples = [], context = '' })
   const _example =
     examples && examples.length > 0
       ? `Examples: ${examples.map(
-          (ex) => `Input ${ex.context} Output [${ex.extracted_ans}]`
+          (ex) => `Input ${ex.context} Output [${ex.extracted_answer}]`
         )}`
       : '';
   return `
