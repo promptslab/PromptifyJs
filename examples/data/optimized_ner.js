@@ -5,10 +5,14 @@ export const nerData = {
                 {
                     E: "DISEASE",
                     T: "Alzheimer's disease",
+                    start: 0,
+                    end: 10
                 },
                 {
                     E: "BIOMARKER",
                     T: "Amyloid β42",
+                    start: 5,
+                    end: 16
                 },
                 {
                     E: "BIOMARKER",
