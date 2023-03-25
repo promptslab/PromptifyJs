@@ -3,7 +3,7 @@ import { OpenAI } from "../models/openai.js";
 import { Prompter } from "../promptify/index.js";
 import { nerData } from "../examples/data/optimized_ner.js";
 
-const model = OpenAI("api-key");
+const model = OpenAI("openai-api");
 const examples = nerData.samples[0].data;
 const firstExample = examples.slice(0, 3);
 
@@ -12,8 +12,11 @@ const prompt = ner({
     description: "Medicine NER Expert",
     domain: "medicine",
     labels: "",
+    position: true,
     examples: [firstExample],
 });
+
+console.log(prompt)
 
 const result = await Prompter(model, prompt, "text-davinci-003");
 
